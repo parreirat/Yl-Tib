@@ -1,13 +1,12 @@
 class LinksController < ApplicationController
 
   def index
-    #
     @links = Link.all
   end
 
   def redirect
 
-    id = unshorten_link(params[:id])
+    id = unshorten_link(params[:shortened_link])
     @link = Link.find(id)
     @link.click_count += 1
     @link.save
@@ -80,30 +79,26 @@ class LinksController < ApplicationController
   end
 =end
 
-  # DELETE /links/1
-  # DELETE /links/1.json
   def destroy
+
+    @link = Link.find(params[:id])
     @link.destroy
+
     respond_to do |format|
       format.html { redirect_to links_url }
       format.json { head :no_content }
     end
-  end
 
-  private
-  # É chamado sempre no show, edit, update, destroy
-=begin
-  def set_link
-    @link = Link.find(params[:id])
   end
-=end
 
   def link_params
+
     params.require(:link).permit(:original_link)
+
   end
 
   SYMBOLS =
-      (('a'..'z').to_a + ('A'..'Z').to_a + (0..9).to_a).shuffle.join
+      (('a'..'z').to_a + ('A'..'Z').to_a + (0..9).to_a).join
 
   # Shortening link based on radix64 (a-z, A-Z, 0-9).
   def shorten_link(link_id)
@@ -147,5 +142,7 @@ class LinksController < ApplicationController
     return link_id
 
   end
+
+  helper_method :shorten_link, :unshorten_link
 
 end

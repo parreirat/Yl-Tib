@@ -12,12 +12,13 @@
 <table>
   <thead>
     <tr>
-      <th>Original link</th>
-      <th>Shortened link</th>
-      <th>Click count</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th style="width:140px">Original Link</th>
+      <th style="width:240px">Shortened Link</th>
+      <th style="width:140px">Click Count</th>
+      <th style="width:140px">Link ID</th>
+      <th style="width:140px">Short(id)</th>
+      <th style="width:140px">Unshort(short(id))</th>
+      <th style="width:140px"></th>
     </tr>
   </thead>
 
@@ -25,11 +26,14 @@
     <% @links.each do |link| %>
       <tr>
         <td><%= link.original_link %></td>
-        <td><%= link.shortened_link %></td>
+        <td><%= root_url + link.shortened_link %></td>
         <td><%= link.click_count %></td>
-        <td><%= link_to 'Show', link %></td>
-<!--        <td><%= link_to 'Edit', edit_link_path(link) %></td>
-        <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+        <!--<td><%= link_to 'See Link', '/links/'+link.id.to_s %></td>-->
+        <td><%= link.id %></td>
+        <td><%= shorten_link(link.id) %></td>
+        <td><%= unshorten_link(shorten_link(link.id)) %></td>
+<!--        <td><%= link_to '', '/links/'+link.id.to_s %></td>
+        <td><%= link_to 'Apagar', '/links/'+link.id.to_s, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       </tr>
     <% end %>
   </tbody>
@@ -37,4 +41,9 @@
 
 <br>
 
-<%= link_to 'New Link', new_link_path %>
+<%= shorten_link(1453) %>
+<%= unshorten_link(shorten_link(1453)) %>
+
+<br/>
+
+<%= link_to 'New Link', '/links/new' %>

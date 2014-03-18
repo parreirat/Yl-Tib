@@ -1,14 +1,12 @@
 YlTib::Application.routes.draw do
 
-  root "links#index"
+  root "links#new"
 
-=begin
   get '/links' => 'links#index'
-  get '/links/:id' => 'links#show'
-=end
-
-  resources :links
-  get '/links/:id' => 'links#redirect'
+  post '/links' => 'links#create'
+  get '/links/new' => 'links#new'
+  delete '/links/:id' => 'links#destroy'
+  get '/:shortened_link' => 'links#redirect'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
