@@ -2,7 +2,14 @@ YlTib::Application.routes.draw do
 
   root "links#index"
 
+=begin
+  get '/links' => 'links#index'
+  get '/links/:id' => 'links#show'
+=end
+
   resources :links
+  get '/links/:id' => 'links#redirect'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
