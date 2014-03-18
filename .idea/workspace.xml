@@ -45,7 +45,14 @@
         <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="595">
-              <folding />
+              <folding>
+                <marker date="1395142319881" expanded="true" signature="90:322" placeholder="..." />
+                <marker date="1395142319881" expanded="true" signature="202:311" placeholder="..." />
+                <marker date="1395142319881" expanded="true" signature="357:473" placeholder="..." />
+                <marker date="1395142319881" expanded="true" signature="479:588" placeholder="..." />
+                <marker date="1395142319881" expanded="true" signature="596:701" placeholder="..." />
+                <marker date="1395142319881" expanded="true" signature="727:756" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,7 +61,11 @@
         <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="53" selection-start="311" selection-end="311" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="425">
-              <folding />
+              <folding>
+                <marker date="1395142526879" expanded="true" signature="36:104" placeholder="..." />
+                <marker date="1395142526879" expanded="true" signature="109:179" placeholder="..." />
+                <marker date="1395142526879" expanded="true" signature="186:253" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,7 +73,7 @@
       <file leaf-file-name="links_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Yl-Tib/app/controllers/links_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="7" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.4622871" vertical-offset="966" max-vertical-offset="1377">
+            <state line="114" column="58" selection-start="2777" selection-end="2777" vertical-scroll-proportion="1.5019685" vertical-offset="1175" max-vertical-offset="2363">
               <folding />
             </state>
           </provider>
@@ -92,6 +103,31 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="784" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -139,6 +175,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,11 +333,43 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Example" />
     <property name="project.settings.patched" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="LayoutCode.rearrangeEntriesRuby" value="false" />
+    <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bb05ff45-8129-4661-8544-2dc1d4941c18" name="Default" comment="" />
@@ -297,9 +383,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17846154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3074018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20166163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -392,20 +478,41 @@
     <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="595">
-          <folding />
+          <folding>
+            <marker date="1395142319881" expanded="true" signature="90:322" placeholder="..." />
+            <marker date="1395142319881" expanded="true" signature="202:311" placeholder="..." />
+            <marker date="1395142319881" expanded="true" signature="357:473" placeholder="..." />
+            <marker date="1395142319881" expanded="true" signature="479:588" placeholder="..." />
+            <marker date="1395142319881" expanded="true" signature="596:701" placeholder="..." />
+            <marker date="1395142319881" expanded="true" signature="727:756" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="53" selection-start="311" selection-end="311" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="425">
+          <folding>
+            <marker date="1395142526879" expanded="true" signature="36:104" placeholder="..." />
+            <marker date="1395142526879" expanded="true" signature="109:179" placeholder="..." />
+            <marker date="1395142526879" expanded="true" signature="186:253" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/47ea3a14/c6608db5-93be-4aed-a70f-d6f7d296f1f9/..links">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Yl-Tib/app/controllers/links_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="7" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.4622871" vertical-offset="966" max-vertical-offset="1377">
+        <state line="114" column="58" selection-start="2777" selection-end="2777" vertical-scroll-proportion="1.5019685" vertical-offset="1175" max-vertical-offset="2363">
           <folding />
         </state>
       </provider>

@@ -24,7 +24,10 @@ class LinksController < ApplicationController
   # POST /links
   # POST /links.json
   def create
+    # Creates new link with parameters passed through.
     @link = Link.new(link_params)
+    # All shortened links initially have 0 redirections.
+    @link.click_count = 0
 
     respond_to do |format|
       if @link.save
@@ -40,6 +43,7 @@ class LinksController < ApplicationController
 
   # PATCH/PUT /links/1
   # PATCH/PUT /links/1.json
+=begin
   def update
     respond_to do |format|
       if @link.update(link_params)
@@ -51,6 +55,7 @@ class LinksController < ApplicationController
       end
     end
   end
+=end
 
   # DELETE /links/1
   # DELETE /links/1.json
@@ -63,13 +68,66 @@ class LinksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_link
-      @link = Link.find(params[:id])
+  # É chamado sempre no show, edit, update, destroy
+  def set_link
+    @link = Link.find(params[:id])
+  end
+
+  def link_params
+=begin
+      params.require(:link).permit(:original_link, :shortened_link, :click_count)
+=end
+    params.require(:link).permit(:original_link)
+  end
+
+  ALPHABET =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split(//)
+=begin
+  ALPHABET =
+      "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split(//)
+=end
+
+  # Shortening link based on radix64 (a-z, A-Z, 0-9).
+  def shorten_link(link_id)
+
+    # If link_id is 0, return the first index of our alphabet (in our case, an 'a').
+    if link_id == 0
+      return ALPHABET[0]
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def link_params
-      params.require(:link).permit(:original_link, :shortened_link, :click_count)
+    # Declare variable for outputting shortened link.
+    shortened_link = ''
+
+    # Conversion to base radix 64, grab alphabet's length.
+    base = ALPHABET.length
+
+    # While link_id is bigger than 0, encode string into radix 64.
+    while link_id > 0
+      shortened_link << ALPHABET[link_id.modulo(base)]
+      link_id /= base
     end
+
+    # Reverse string into correct ordering.
+    shortened_link.reverse
+
+  end
+
+  # Returns original link based on it's shortened version.
+  def unshorten_link(shortened_link)
+
+    i = 0
+
+    # Conversion to base radix 64, grab alphabet's length.
+    base = ALPHABET.length
+
+    # For every char in the shortened link, multiply by base, sum char's index and add to i.
+    shortened_link.each_char {
+        |c|
+      i = i * base + ALPHABET.index(c)
+    }
+
+    return i
+
+  end
+
 end
