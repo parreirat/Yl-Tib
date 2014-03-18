@@ -28,6 +28,7 @@ class LinksController < ApplicationController
 
     respond_to do |format|
       if @link.save
+        # Redirect para o show do link criado
         format.html { redirect_to @link, notice: 'Link was successfully created.' }
         format.json { render action: 'show', status: :created, location: @link }
       else
