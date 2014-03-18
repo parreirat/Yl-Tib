@@ -31,12 +31,13 @@ class LinksController < ApplicationController
 
     respond_to do |format|
       if @link.save
+        # Generate shortened link based on internal ID of link.
+        @link.shortened_link = shorten_link(@link.id)
+        @link.save
         # Redirect para o show do link criado
         format.html { redirect_to @link, notice: 'Link was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @link }
       else
         format.html { render action: 'new' }
-        format.json { render json: @link.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -74,9 +75,6 @@ class LinksController < ApplicationController
   end
 
   def link_params
-=begin
-      params.require(:link).permit(:original_link, :shortened_link, :click_count)
-=end
     params.require(:link).permit(:original_link)
   end
 
