@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Original link:</strong>
+  <%= @link.original_link %>
+</p>
+
+<p>
+  <strong>Shortened link:</strong>
+  <%= @link.shortened_link %>
+</p>
+
+<p>
+  <strong>Click count:</strong>
+  <%= @link.click_count %>
+</p>
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>
