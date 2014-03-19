@@ -30,20 +30,21 @@
         <td><%= link.click_count %></td>
         <!--<td><%= link_to 'See Link', '/links/'+link.id.to_s %></td>-->
         <td><%= link.id %></td>
-        <td><%= shorten_link(link.id) %></td>
-        <td><%= unshorten_link(shorten_link(link.id)) %></td>
+        <td><%= link.shortened_link %></td>
+        <td><%= link.original_link %></td>
 <!--        <td><%= link_to '', '/links/'+link.id.to_s %></td>
-        <td><%= link_to 'Apagar', '/links/'+link.id.to_s, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+        <td><%= link_to 'Apagar Link', '/links/'+link.id.to_s, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= shorten_link(1453) %>
-<%= unshorten_link(shorten_link(1453)) %>
-
+<br/>
+<br/>
 <br/>
 
 <%= link_to 'New Link', '/links/new' %>
+
+<br/>
+<br/>
+<br/>

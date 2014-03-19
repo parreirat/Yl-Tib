@@ -5,6 +5,7 @@ YlTib::Application.routes.draw do
   get '/links' => 'links#index'
   post '/links' => 'links#create'
   get '/links/new' => 'links#new'
+  get '/links/:id' => 'links#show'
   delete '/links/:id' => 'links#destroy'
   get '/:shortened_link' => 'links#redirect'
 

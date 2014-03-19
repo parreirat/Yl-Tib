@@ -5,20 +5,12 @@
   <%= @link.original_link %>
 </p>
 
-<br/>
-
 <p>
   <strong>Shortened link:</strong>
-  <%= @link.shortened_link %>
+  <%= root_url + @link.shortened_link %>
 </p>
-
-<br/>
 
 <p>
   <strong>Click count:</strong>
   <%= @link.click_count %>
 </p>
-
-<!--<%= link_to 'Edit', edit_link_path(@link) %> |-->
-<%= link_to 'Back', links_path %>
-<%= link_to 'Redirect', links %>

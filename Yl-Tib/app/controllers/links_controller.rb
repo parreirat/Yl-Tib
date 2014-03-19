@@ -16,8 +16,6 @@ class LinksController < ApplicationController
 
   def show
     @link = Link.find(params[:id])
-    @link.click_count += 1
-    @link.save
   end
 
   def new
@@ -37,47 +35,36 @@ class LinksController < ApplicationController
 
     # Creates new link with parameters passed through.
     @link = Link.new(link_params)
-    # All shortened links initially have 0 redirections.
-    @link.click_count = 0
 
-    respond_to do |format|
+    stored_link
+
+    # If link hasn't been stored in database, save it and show it.
+    if (Link.where(original_link: @link.original_link).count == 0)
 
       if @link.save
 
         # Generate shortened link based on internal ID of link.
         @link.shortened_link = shorten_link(@link.id)
+        # All shortened links initially have 0 redirections.
+        @link.click_count = 0
 
         # Save generated link.
         @link.save
 
-        # Redirect para o show do link criado
-        format.html { redirect_to links_path, notice: 'Link was successfully created.' }
-
-      else
-
-        format.html { render action: 'new' }
+        # Redirect to created link.
+        redirect_to '/links/'+@link.id.to_s
 
       end
+
+    # Incase the link has already been previously saved, return it.
+    else
+
+      # Redirect to the previously saved link.
+      redirect_to '/links/'+@link.id.to_s
 
     end
 
   end
-
-  # PATCH/PUT /links/1
-  # PATCH/PUT /links/1.json
-=begin
-  def update
-    respond_to do |format|
-      if @link.update(link_params)
-        format.html { redirect_to @link, notice: 'Link was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @link.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-=end
 
   def destroy
 
@@ -98,9 +85,9 @@ class LinksController < ApplicationController
   end
 
   SYMBOLS =
-      (('a'..'z').to_a + ('A'..'Z').to_a + (0..9).to_a).join
+      (('a'..'z').to_a + ('A'..'Z').to_a + (0..9).to_a).shuffle.join
 
-  # Shortening link based on radix64 (a-z, A-Z, 0-9).
+# Shortening link based on radix64 (a-z, A-Z, 0-9).
   def shorten_link(link_id)
 
     # If link_id is 0, return the first index of our alphabet.
@@ -125,7 +112,7 @@ class LinksController < ApplicationController
 
   end
 
-  # Returns original link's id based on it's shortened version.
+# Returns stored link's id based on it's shortened version.
   def unshorten_link(shortened_link)
 
     link_id = 0
