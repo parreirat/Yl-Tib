@@ -1,5 +1,23 @@
-<h1>New link</h1>
+<h1>Shortify your links!</h1>
 
 <%= render 'form' %>
 
 <%= link_to 'Back', links_path %>
+
+<br/><br/>
+
+<% @author_links.each do |link| %>
+    <br/>
+    <%= link.original_link %>
+    ---
+    <%= root_url + link.shortened_link %>
+    ---
+    <%= link.click_count %>
+    ---
+    <%= link.id %>
+    ---
+    <%= link.shortened_link %>
+    ---
+    <%= link.original_link %>
+    <br/>
+<% end %>

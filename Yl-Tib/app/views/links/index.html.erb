@@ -1,29 +1,22 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 <h1>Listing links</h1>
 
 <table>
   <thead>
-    <tr>
-      <th style="width:140px">Original Link</th>
-      <th style="width:240px">Shortened Link</th>
-      <th style="width:140px">Click Count</th>
-      <th style="width:140px">Link ID</th>
-      <th style="width:140px">Short(id)</th>
-      <th style="width:140px">Unshort(short(id))</th>
-      <th style="width:140px"></th>
-    </tr>
+  <tr>
+    <th style="width:140px">Original Link</th>
+    <th style="width:240px">Shortened Link</th>
+    <th style="width:140px">Click Count</th>
+    <th style="width:140px">Link ID</th>
+    <th style="width:140px">Short(id)</th>
+    <th style="width:140px">Unshort(short(id))</th>
+    <th style="width:140px">IP</th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @links.each do |link| %>
+  <% @links.each do |link| %>
       <tr>
         <td><%= link.original_link %></td>
         <td><%= root_url + link.shortened_link %></td>
@@ -31,11 +24,12 @@
         <!--<td><%= link_to 'See Link', '/links/'+link.id.to_s %></td>-->
         <td><%= link.id %></td>
         <td><%= link.shortened_link %></td>
-        <td><%= link.original_link %></td>
-<!--        <td><%= link_to '', '/links/'+link.id.to_s %></td>
-        <td><%= link_to 'Apagar Link', '/links/'+link.id.to_s, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+        <!--        <td><%= link_to '', '/links/'+link.id.to_s %></td>-->
+       <!--<td><%= link_to 'Apagar Link', '/links/'+link.id.to_s, method: :delete, data: {confirm: 'Are you sure?'} %></td>-->
+        <td><%= link.author_ip %></td>
       </tr>
-    <% end %>
+
+  <% end %>
   </tbody>
 </table>
 

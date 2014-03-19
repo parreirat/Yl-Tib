@@ -5,6 +5,7 @@ class CreateLinks < ActiveRecord::Migration
     create_table :links do |t|
       t.string :original_link
       t.string :shortened_link
+      t.string :author_ip
       t.integer :click_count
 
       t.timestamps

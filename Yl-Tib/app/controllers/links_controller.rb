@@ -4,8 +4,14 @@ class LinksController < ApplicationController
     @links = Link.all
   end
 
+  def waiting
+
+  end
+
   def redirect
 
+    # ADICIONAR UMA PAGINA DE ESPERA ANTES DE REDIRECCIONAR + SLEEP
+    # CHECKS CASO LINK EXISTA!
     id = unshorten_link(params[:shortened_link])
     @link = Link.find(id)
     @link.click_count += 1
@@ -22,6 +28,7 @@ class LinksController < ApplicationController
 
     # Prepare for form in view.
     @link = Link.new
+    @author_links = Link.where(author_ip: request.remote_ip)
 
   end
 
@@ -47,6 +54,8 @@ class LinksController < ApplicationController
         @link.shortened_link = shorten_link(@link.id)
         # All shortened links initially have 0 redirections.
         @link.click_count = 0
+        # Save IP Address of user who submitted link.
+        @link.author_ip = request.remote_ip
 
         # Save generated link.
         @link.save
@@ -71,10 +80,7 @@ class LinksController < ApplicationController
     @link = Link.find(params[:id])
     @link.destroy
 
-    respond_to do |format|
-      format.html { redirect_to links_url }
-      format.json { head :no_content }
-    end
+    redirect_to links_url
 
   end
 
