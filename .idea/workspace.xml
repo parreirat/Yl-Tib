@@ -23,28 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="10" selection-start="123" selection-end="123" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="595">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="links_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Yl-Tib/app/controllers/links_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="133" selection-end="133" vertical-scroll-proportion="0.3660287" vertical-offset="0" max-vertical-offset="2516">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="42" selection-start="274" selection-end="274" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="833">
+            <state line="25" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.5229592" vertical-offset="220" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -66,10 +48,10 @@
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/db/migrate/20140318012833_create_links.rb" />
         <option value="$PROJECT_DIR$/Yl-Tib/db/migrate/20140319011134_create_links.rb" />
-        <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/new.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/show.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/waiting.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/index.html.erb" />
+        <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/new.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/controllers/links_controller.rb" />
       </list>
     </option>
@@ -551,7 +533,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Yl-Tib/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/47ea3a14/c6608db5-93be-4aed-a70f-d6f7d296f1f9/..links">
@@ -583,16 +567,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/index.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="284" selection-end="284" vertical-scroll-proportion="0.30357143" vertical-offset="0" max-vertical-offset="476">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/controllers/links_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="392">
+        <state line="81" column="25" selection-start="1752" selection-end="1752" vertical-scroll-proportion="0.48803827" vertical-offset="1173" max-vertical-offset="2465">
           <folding />
         </state>
       </provider>
@@ -613,21 +597,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="42" selection-start="274" selection-end="274" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="833">
+        <state line="13" column="35" selection-start="362" selection-end="362" vertical-scroll-proportion="0.08928572" vertical-offset="186" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="10" selection-start="323" selection-end="323" vertical-scroll-proportion="0.43367347" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.26020408" vertical-offset="0" max-vertical-offset="392">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="123" selection-end="123" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/controllers/links_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="133" selection-end="133" vertical-scroll-proportion="0.3660287" vertical-offset="0" max-vertical-offset="2516">
+        <state line="25" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.5229592" vertical-offset="220" max-vertical-offset="612">
           <folding />
         </state>
       </provider>

@@ -2,6 +2,7 @@
 
 <%= render 'form' %>
 
+<!--Incase current user has no Links up, do not display the Link listing. -->
 <% if @author_links.count > 0 %>
 
     <table>

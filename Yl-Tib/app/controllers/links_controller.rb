@@ -21,7 +21,9 @@ class LinksController < ApplicationController
   end
 
   def show
+
     @link = Link.find(params[:id])
+
   end
 
   def new
@@ -32,18 +34,13 @@ class LinksController < ApplicationController
 
   end
 
-  def edit
-
-    @link = Link.find(params[:id])
-
-  end
-
   def create
 
     # Creates new link with parameters passed through.
-    #TODO - Checks para ver se link é válido?
+    #TODO - Parsing to check if link is valid?
     @link = Link.new(link_params)
 
+    #
     stored_link = Link.where(original_link: @link.original_link)
 
     # If link hasn't been stored in database, save it and show it.
@@ -76,6 +73,7 @@ class LinksController < ApplicationController
 
   end
 
+  # Grabs link which's id is supplied, and deletes it from the databases.
   def destroy
 
     @link = Link.find(params[:id])
@@ -85,22 +83,19 @@ class LinksController < ApplicationController
 
   end
 
+  # Defines what parameters can be passed along, in this case, only the link to be shortened.
   def link_params
 
     params.require(:link).permit(:original_link)
 
   end
 
+  # The symbols used to encode the URLs.
   SYMBOLS =
       (('a'..'z').to_a + ('A'..'Z').to_a + (0..9).to_a).shuffle.join
 
 # Shortening link based on radix64 (a-z, A-Z, 0-9).
   def shorten_link(link_id)
-
-    # If link_id is 0, return the first index of our alphabet.
-    if link_id == 0
-      return SYMBOLS[0]
-    end
 
     # Declare variable for outputting shortened link.
     shortened_link = ''
@@ -133,10 +128,12 @@ class LinksController < ApplicationController
       link_id = link_id * base + SYMBOLS.index(char)
     }
 
+    # Returns original link's id.
     return link_id
 
   end
 
+  # Helpers mostly for debugging in the view to check if shortening/unshortening is correct.
   helper_method :shorten_link, :unshorten_link
 
 end
