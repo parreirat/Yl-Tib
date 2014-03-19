@@ -5,13 +5,13 @@ class LinksController < ApplicationController
   end
 
   def waiting
-
+    #TODO - To be added.
   end
 
   def redirect
 
-    # ADICIONAR UMA PAGINA DE ESPERA ANTES DE REDIRECCIONAR + SLEEP
-    # CHECKS CASO LINK EXISTA!
+    #TODO - Redirecction waiting page plus a sleep on it.
+    #TODO - Check if link exists.
     id = unshorten_link(params[:shortened_link])
     @link = Link.find(id)
     @link.click_count += 1
@@ -41,6 +41,7 @@ class LinksController < ApplicationController
   def create
 
     # Creates new link with parameters passed through.
+    #TODO - Checks para ver se link é válido?
     @link = Link.new(link_params)
 
     stored_link = Link.where(original_link: @link.original_link)
@@ -128,8 +129,8 @@ class LinksController < ApplicationController
 
     # For every char in the shortened link, multiply by base, sum char's index and add to i.
     shortened_link.each_char {
-        |c|
-      link_id = link_id * base + SYMBOLS.index(c)
+        |char|
+      link_id = link_id * base + SYMBOLS.index(char)
     }
 
     return link_id

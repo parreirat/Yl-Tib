@@ -1,16 +1,13 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Original link:</strong>
-  <%= @link.original_link %>
+  <a href="<%= @link.original_link %>">
+    <%= @link.original_link %>
+  </a>
 </p>
 
 <p>
   <strong>Shortened link:</strong>
-  <%= root_url + @link.shortened_link %>
-</p>
-
-<p>
-  <strong>Click count:</strong>
-  <%= @link.click_count %>
+  <a href="<%= root_url + @link.shortened_link %>">
+    <%= root_url + @link.shortened_link %>
+  </a>
 </p>

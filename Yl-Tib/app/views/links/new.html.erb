@@ -2,22 +2,29 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Back', links_path %>
+<% if @author_links.count > 0 %>
 
-<br/><br/>
+    <table>
+      <thead>
+      <tr>
+        <th style="width:140px">Original Link</th>
+        <th style="width:240px">Shortened Link</th>
+        <th style="width:140px">Click Count</th>
+        <th></th>
+      </tr>
+      </thead>
 
-<% @author_links.each do |link| %>
-    <br/>
-    <%= link.original_link %>
-    ---
-    <%= root_url + link.shortened_link %>
-    ---
-    <%= link.click_count %>
-    ---
-    <%= link.id %>
-    ---
-    <%= link.shortened_link %>
-    ---
-    <%= link.original_link %>
-    <br/>
+      <tbody>
+      <% @author_links.each do |link| %>
+          <tr>
+            <td><%= link.original_link %></td>
+            <td><%= root_url + link.shortened_link %></td>
+            <td><%= link.click_count %></td>
+            <td><%= link_to 'Apagar Link', '/links/'+link.id.to_s, method: :delete %></td>
+          </tr>
+
+      <% end %>
+      </tbody>
+
 <% end %>
+</table>
