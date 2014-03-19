@@ -1,9 +1,9 @@
 class LinksController < ApplicationController
 
-  before_action :author_links, only: [:index, :new]
-
   def index
+
     @links = Link.all
+
   end
 
   def waiting
@@ -32,7 +32,7 @@ class LinksController < ApplicationController
 
     # Prepare for form in view.
     @link = Link.new
-    # Send into view 
+    @author_links = author_links
 
   end
 
@@ -42,7 +42,6 @@ class LinksController < ApplicationController
     #TODO - Parsing to check if link is valid?
     @link = Link.new(link_params)
 
-    #
     stored_link = Link.where(original_link: @link.original_link)
 
     # If link hasn't been stored in database, save it and show it.
@@ -145,6 +144,8 @@ class LinksController < ApplicationController
   end
 
   # Helpers mostly for debugging in the view to check if shortening/unshortening is correct.
+=begin
   helper_method :shorten_link, :unshorten_link
+=end
 
 end

@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="4186521398">
+  <component name="DataSourceManagerImpl" format="xml" hash="1548566723">
     <data-source source="LOCAL" name="development" uuid="c6608db5-93be-4aed-a70f-d6f7d296f1f9">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\Acer\RubymineProjects\Yl-Tib\Yl-Tib\db\development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails -DAWeb TP2-: development" uuid="c4be8b71-bc4f-4940-8dbb-554d75ef4379">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Acer\Desktop\-DAWeb TP2-\db\development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails -DAWeb TP2-: test" uuid="e7dc06ea-77ae-4354-87bf-dff01839a79f">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Acer\Desktop\-DAWeb TP2-\db\test.sqlite3</jdbc-url>
       <libraries />
     </data-source>
   </component>

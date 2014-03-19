@@ -1,19 +1,17 @@
 <div class="DivTitle">
-  <% if @link.created_at != %>
-      <h1>Link had previously been stored already!</h1>
-  <% else %>
-      <h1>Link successfully shortened!</h1>
-  <% end %>
+  <h1>Link successfully shortened!</h1>
 </div>
 
 <div class="BoxedDiv">
 
   <p>
     <strong>Original link:</strong>
-    <a href=" <%= @link.original_link %> " class="LinkText">
+    <a href=" <%= @link.original_link %> ">
       <%= @link.original_link %>
     </a>
   </p>
+
+  <br/>
 
   <p>
     <strong>Shortened link:</strong>
@@ -21,6 +19,11 @@
       <%= root_url + @link.shortened_link %>
     </a>
   </p>
+
+  <% if @link.click_count > 0 %>
+      <strong>Click count:</strong>
+      <%= @link.click_count %>
+  <% end %>
 
 </div>
 
