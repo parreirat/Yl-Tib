@@ -36,10 +36,10 @@ class LinksController < ApplicationController
     # Creates new link with parameters passed through.
     @link = Link.new(link_params)
 
-    stored_link
+    stored_link = Link.where(original_link: @link.original_link)
 
     # If link hasn't been stored in database, save it and show it.
-    if (Link.where(original_link: @link.original_link).count == 0)
+    if (stored_link.count == 0)
 
       if @link.save
 
@@ -56,11 +56,11 @@ class LinksController < ApplicationController
 
       end
 
-    # Incase the link has already been previously saved, return it.
+      # Incase the link has already been previously saved, return it.
     else
 
       # Redirect to the previously saved link.
-      redirect_to '/links/'+@link.id.to_s
+      redirect_to '/links/'+stored_link.first.id.to_s
 
     end
 
