@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: -ms-linear-gradient(top left, #96A8A0 0%, #BFBB5A 100%);
+    background-image: -moz-linear-gradient(top left, #96A8A0 0%, #BFBB5A 100%);
+    background-image: -o-linear-gradient(top left, #96A8A0 0%, #BFBB5A 100%);
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #96A8A0), color-stop(1, #BFBB5A));
+    background-image: -webkit-linear-gradient(top left, #96A8A0 0%, #BFBB5A 100%);
+    background-image: linear-gradient(to bottom right, #96A8A0 0%, #BFBB5A 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#HeaderDiv {
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 60px;
+}
+
+.HeaderMenuItem {
+    width: 26.66667%;
+    height: 60px;
+    float: left;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-top: 4px;
+    border-bottom: 4px;
+}
+
+.HeaderMenuItem:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: solid 4px #b8860b;
+}
+
+.HeaderMenuItem:active {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.HeaderItemDecoration {
+    text-decoration: none;
+    font-family: 'Rammetto One', cursive;
+    font-size: 12px;
+    color: #d4dace;
+    /*color: #cbd2bb;*/
+}
+
+.HeaderItemDecoration:hover {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#MenuLogo {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: 35%;
+    width: 20%;
+    background-image: url(<%= asset_path 'bannerImages/Logo.png' %>);
+    border-bottom: solid 4px #b8860b;
+}
+
+#MenuLogo:active {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*Todos os filhos de HeaderDiv que não o Logo. Um shortcut.*/
+#HeaderDiv * :not(#MenuLogo):hover {
+    background-size: 65px;
+}
+
+#MenuLogo:hover {
+    background-size: 40%;
+}
+
+#MenuShorten {
+    background-image: url(<%= asset_path 'bannerImages/Shorten.png' %>);
+    background-size: 50px;
+}
+
+#MenuStatistics {
+    background-image: url(<%= asset_path 'bannerImages/Statistics.png' %>);
+    background-size: 50px;
+}
+
+#MenuAbout {
+    background-image: url(<%= asset_path 'bannerImages/About.png' %>);
+    background-size: 50px;
+}
+
+#MainDiv {
+    position: relative;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+    /*height: 200px;*/
+    margin-top: 15px;
+    float: left;
+}
+
+/* TODO: RESPONSIVENESS!! */
+
