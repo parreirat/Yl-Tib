@@ -1,12 +1,12 @@
-<div id="DivTitle">
+<div class="DivTitle">
   <h1>Shortify your links!</h1>
 </div>
 
-<%= render 'form' %>
+<%= render 'partials/form' %>
 
 <!--Incase current user has Links up, display the Link listing. -->
 <% if @author_links.count > 0 %>
 
-    <%= render 'linkListing' %>
+    <%= render 'partials/authorLinksListing' %>
 
 <% end %>

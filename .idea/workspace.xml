@@ -23,41 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/new.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="184" selection-end="215" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="289">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_linkListing.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_linkListing.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="19" selection-start="275" selection-end="275" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="595">
-              <folding>
-                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="12" selection-start="237" selection-end="237" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="374">
+            <state line="2" column="25" selection-start="79" selection-end="79" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
@@ -66,44 +35,7 @@
       <file leaf-file-name="links_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Yl-Tib/app/controllers/links_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="21" selection-start="133" selection-end="133" vertical-scroll-proportion="0.14143094" vertical-offset="0" max-vertical-offset="2635">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="baseStyling.css.scss.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Yl-Tib/app/assets/stylesheets/baseStyling.css.scss.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="9" selection-start="4442" selection-end="4450" vertical-scroll-proportion="-8.038462" vertical-offset="1355" max-vertical-offset="1972">
-              <folding>
-                <element signature="e#2#40#0" expanded="false" />
-                <element signature="e#63#684#0" expanded="false" />
-                <element signature="e#1082#1250#0" expanded="false" />
-                <element signature="e#1268#1488#0" expanded="false" />
-                <element signature="e#1512#1596#0" expanded="false" />
-                <element signature="e#1621#1666#0" expanded="false" />
-                <element signature="e#1690#1827#0" expanded="false" />
-                <element signature="e#1857#1908#0" expanded="false" />
-                <element signature="e#1920#2115#0" expanded="false" />
-                <element signature="e#2134#2179#0" expanded="false" />
-                <element signature="e#2278#2308#0" expanded="false" />
-                <element signature="e#2326#2355#0" expanded="false" />
-                <element signature="e#2370#2473#0" expanded="false" />
-                <element signature="e#2491#2597#0" expanded="false" />
-                <element signature="e#2635#2783#0" expanded="false" />
-                <element signature="e#2795#3037#0" expanded="false" />
-                <element signature="e#3068#3462#0" expanded="false" />
-                <element signature="e#3476#3789#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Yl-Tib/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="34" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+            <state line="34" column="21" selection-start="596" selection-end="596" vertical-scroll-proportion="0.695581" vertical-offset="153" max-vertical-offset="2652">
               <folding />
             </state>
           </provider>
@@ -122,7 +54,6 @@
         <option value="$PROJECT_DIR$/Yl-Tib/config/routes.rb" />
         <option value="$PROJECT_DIR$/Yl-Tib/db/migrate/20140318012833_create_links.rb" />
         <option value="$PROJECT_DIR$/Yl-Tib/db/migrate/20140319011134_create_links.rb" />
-        <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/show.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/waiting.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/assets/stylesheets/baseStyling.css.scss" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/_navbar.html.erb" />
@@ -130,13 +61,17 @@
         <option value="$PROJECT_DIR$/Yl-Tib/app/assets/stylesheets/application.css" />
         <option value="$APPLICATION_HOME_DIR$/lib/rubymine.jar!/resources/html5-schema/meta.rnc" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/_footer.html" />
-        <option value="$PROJECT_DIR$/Yl-Tib/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/_header.html.erb" />
-        <option value="$PROJECT_DIR$/Yl-Tib/app/assets/stylesheets/baseStyling.css.scss.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/_form.html.erb" />
-        <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/new.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/_linkListing.html.erb" />
+        <option value="$PROJECT_DIR$/Yl-Tib/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/index.html.erb" />
+        <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/new.html.erb" />
+        <option value="$PROJECT_DIR$/Yl-Tib/app/views/partials/_linkListing.html.erb" />
+        <option value="$PROJECT_DIR$/Yl-Tib/app/views/partials/_authorLinksListing.html.erb" />
+        <option value="$PROJECT_DIR$/Yl-Tib/app/views/links/show.html.erb" />
+        <option value="$PROJECT_DIR$/Yl-Tib/app/assets/stylesheets/baseStyling.css.scss.erb" />
+        <option value="$PROJECT_DIR$/Yl-Tib/app/views/fixedParts/_header.html.erb" />
         <option value="$PROJECT_DIR$/Yl-Tib/app/controllers/links_controller.rb" />
       </list>
     </option>
@@ -235,6 +170,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bannerImages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -266,6 +267,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yl-Tib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixedParts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -399,6 +430,12 @@
     <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\RubymineProjects\Yl-Tib\Yl-Tib\app\views\partials" />
+      <recent name="C:\Users\Acer\RubymineProjects\Yl-Tib\Yl-Tib\app\views\fixedParts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -542,7 +579,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31595093" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3074018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3074018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -614,7 +651,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/partials/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="476">
           <folding />
@@ -643,34 +680,11 @@
         <state line="2" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.09115282" vertical-offset="0" max-vertical-offset="373" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418" />
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/47ea3a14/c6608db5-93be-4aed-a70f-d6f7d296f1f9/..links">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Yl-Tib/db/migrate/20140319011134_create_links.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="28" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/index.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/waiting.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="11" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0867347" vertical-offset="0" max-vertical-offset="392" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/-DAWeb TP2-/app/assets/stylesheets/application.css">
@@ -757,16 +771,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_footer.html.erb">
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/fixedParts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="10" selection-start="123" selection-end="123" vertical-scroll-proportion="0.14166667" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="161" selection-end="262" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="323">
           <folding />
         </state>
       </provider>
@@ -799,13 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="355" selection-end="355" vertical-scroll-proportion="0.5177665" vertical-offset="0" max-vertical-offset="394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/-DAWeb TP2-/app/assets/stylesheets/misc.css.scss.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
@@ -813,81 +813,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="569" selection-end="569" vertical-scroll-proportion="0.5466667" vertical-offset="12" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Yl-Tib/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
+        <state line="8" column="34" selection-start="224" selection-end="224" vertical-scroll-proportion="0.2172524" vertical-offset="0" max-vertical-offset="1241">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/assets/stylesheets/baseStyling.css.scss.erb">
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/waiting.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="9" selection-start="4442" selection-end="4450" vertical-scroll-proportion="-8.038462" vertical-offset="1355" max-vertical-offset="1972">
-          <folding>
-            <element signature="e#2#40#0" expanded="false" />
-            <element signature="e#63#684#0" expanded="false" />
-            <element signature="e#1082#1250#0" expanded="false" />
-            <element signature="e#1268#1488#0" expanded="false" />
-            <element signature="e#1512#1596#0" expanded="false" />
-            <element signature="e#1621#1666#0" expanded="false" />
-            <element signature="e#1690#1827#0" expanded="false" />
-            <element signature="e#1857#1908#0" expanded="false" />
-            <element signature="e#1920#2115#0" expanded="false" />
-            <element signature="e#2134#2179#0" expanded="false" />
-            <element signature="e#2278#2308#0" expanded="false" />
-            <element signature="e#2326#2355#0" expanded="false" />
-            <element signature="e#2370#2473#0" expanded="false" />
-            <element signature="e#2491#2597#0" expanded="false" />
-            <element signature="e#2635#2783#0" expanded="false" />
-            <element signature="e#2795#3037#0" expanded="false" />
-            <element signature="e#3068#3462#0" expanded="false" />
-            <element signature="e#3476#3789#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="237" selection-end="237" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="374">
+        <state line="2" column="11" selection-start="50" selection-end="50" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="136">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/_linkListing.html.erb">
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="275" selection-end="275" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="595">
-          <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="10" column="35" selection-start="317" selection-end="317" vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/partials/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="184" selection-end="215" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="289">
+        <state line="8" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/47ea3a14/c6608db5-93be-4aed-a70f-d6f7d296f1f9/..links">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.14604811" vertical-offset="0" max-vertical-offset="582">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+        <state line="9" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/partials/_linkListing.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/assets/stylesheets/baseStyling.css.scss.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="9" selection-start="2612" selection-end="2620" vertical-scroll-proportion="0.69244933" vertical-offset="1528" max-vertical-offset="3995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/partials/_authorLinksListing.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="407" selection-end="407" vertical-scroll-proportion="-9.923077" vertical-offset="65" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/fixedParts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="10" selection-start="217" selection-end="217" vertical-scroll-proportion="0.19899665" vertical-offset="0" max-vertical-offset="598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yl-Tib/app/views/links/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="25" selection-start="79" selection-end="79" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="544">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Yl-Tib/app/controllers/links_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="133" selection-end="133" vertical-scroll-proportion="0.14143094" vertical-offset="0" max-vertical-offset="2635">
+        <state line="34" column="21" selection-start="596" selection-end="596" vertical-scroll-proportion="0.695581" vertical-offset="153" max-vertical-offset="2652">
           <folding />
         </state>
       </provider>

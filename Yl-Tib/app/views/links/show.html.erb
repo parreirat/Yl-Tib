@@ -1,13 +1,26 @@
-<p>
-  <strong>Original link:</strong>
-  <a href="<%= @link.original_link %>">
-    <%= @link.original_link %>
-  </a>
-</p>
+<div class="DivTitle">
+  <% if @link.created_at != %>
+      <h1>Link had previously been stored already!</h1>
+  <% else %>
+      <h1>Link successfully shortened!</h1>
+  <% end %>
+</div>
 
-<p>
-  <strong>Shortened link:</strong>
-  <a href="<%= root_url + @link.shortened_link %>">
-    <%= root_url + @link.shortened_link %>
-  </a>
-</p>
+<div class="BoxedDiv">
+
+  <p>
+    <strong>Original link:</strong>
+    <a href=" <%= @link.original_link %> " class="LinkText">
+      <%= @link.original_link %>
+    </a>
+  </p>
+
+  <p>
+    <strong>Shortened link:</strong>
+    <a href=" <%= root_url + @link.shortened_link %> ">
+      <%= root_url + @link.shortened_link %>
+    </a>
+  </p>
+
+</div>
+

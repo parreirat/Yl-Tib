@@ -1,0 +1,32 @@
+<div class="DivTitle">
+  <h1>Links you previously shortened:</h1>
+</div>
+
+<div class="BoxedDiv">
+
+  <table>
+
+    <thead>
+    <tr>
+      <th style="width:140px">Original Link</th>
+      <th style="width:240px">Shortened Link</th>
+      <th style="width:140px">Click Count</th>
+      <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @author_links.order(:click_count).reverse.each do |link| %>
+        <tr>
+          <td><%= link.original_link %></td>
+          <td><%= root_url + link.shortened_link %></td>
+          <td><%= link.click_count %></td>
+          <td><%= link_to 'Apagar Link', '/links/'+link.id.to_s, method: :delete %></td>
+        </tr>
+
+    <% end %>
+    </tbody>
+
+  </table>
+
+</div>

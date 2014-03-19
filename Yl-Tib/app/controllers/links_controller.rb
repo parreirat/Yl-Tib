@@ -32,6 +32,7 @@ class LinksController < ApplicationController
 
     # Prepare for form in view.
     @link = Link.new
+    # Send into view 
 
   end
 
