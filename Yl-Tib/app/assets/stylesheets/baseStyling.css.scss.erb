@@ -3,6 +3,8 @@
     padding: 0px;
 }
 
+/* BODY CSS */
+
 body {
     background-image: -ms-linear-gradient(top left, #96A8A0 0%, #BFBB5A 100%);
     background-image: -moz-linear-gradient(top left, #96A8A0 0%, #BFBB5A 100%);
@@ -15,17 +17,36 @@ body {
     background-attachment: fixed;
 }
 
+#BodyDiv {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 6px;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: solid 2px #adb3a8;
+    height: inherit;
+    float: left;
+    /*border: solid 2px #b8860b;*/
+}
+
+/* HEADER CSS */
+
 #HeaderDiv {
     background-color: rgba(0, 0, 0, 0.5);
     float: left;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
     height: 60px;
+    margin-bottom: 15px;
 }
 
 .HeaderMenuItem {
-    width: 26.66667%;
+    width: 40%;
     height: 60px;
     float: left;
     text-align: center;
@@ -37,7 +58,7 @@ body {
 }
 
 .HeaderMenuItem:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.35);
     border-bottom: solid 4px #b8860b;
 }
 
@@ -89,10 +110,7 @@ body {
     background-size: 50px;
 }
 
-#MenuAbout {
-    background-image: url(<%= asset_path 'bannerImages/About.png' %>);
-    background-size: 50px;
-}
+/* Main Content Div CSS*/
 
 #MainDiv {
     position: relative;
@@ -102,6 +120,99 @@ body {
     /*height: 200px;*/
     margin-top: 15px;
     float: left;
+}
+
+#DivTitle {
+    font-family: 'Rammetto One', cursive;
+    font-size: 8px;
+    color: #d4dace;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid white;
+    padding: 2px 0px 2px 0px;
+    margin-bottom: 10px;
+}
+
+/* Footer CSS */
+
+#FooterDiv {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 15px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    float: left;
+    /*clear: both;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px #b8860b;
+}
+
+#FooterText {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    font-size: 90%;
+    font-family: sans-serif;
+    color: #d4dace;
+    float: left;
+}
+
+/* New Link CSS */
+
+.SubmitButton {
+    font-family: 'Rammetto One', cursive;
+    color: #d4dace;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 2px solid #888888;
+    padding: 0px 4px 0px 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.FormInput {
+    font-family: 'Rammetto One', cursive;
+    color: #d4dace;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 2px solid #888888;
+    padding: 0px 4px 0px 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+
+.LabelText {
+    font-family: 'Rammetto One', cursive;
+    font-size: 10px;
+    color: #d4dace;
+}
+
+.BoxedDiv {
+    color: #d4dace;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: inherit;
+    border: solid 2px #adb3a8;
 }
 
 /* TODO: RESPONSIVENESS!! */

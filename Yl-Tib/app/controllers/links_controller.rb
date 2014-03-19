@@ -1,5 +1,7 @@
 class LinksController < ApplicationController
 
+  before_action :author_links, only: [:index, :new]
+
   def index
     @links = Link.all
   end
@@ -30,7 +32,6 @@ class LinksController < ApplicationController
 
     # Prepare for form in view.
     @link = Link.new
-    @author_links = Link.where(author_ip: request.remote_ip)
 
   end
 
@@ -92,7 +93,10 @@ class LinksController < ApplicationController
 
   # The symbols used to encode the URLs.
   SYMBOLS =
+      (('a'..'z').to_a + ('A'..'Z').to_a + (0..9).to_a).join
+=begin
       (('a'..'z').to_a + ('A'..'Z').to_a + (0..9).to_a).shuffle.join
+=end
 
 # Shortening link based on radix64 (a-z, A-Z, 0-9).
   def shorten_link(link_id)
@@ -131,6 +135,12 @@ class LinksController < ApplicationController
     # Returns original link's id.
     return link_id
 
+  end
+
+  private
+
+  def author_links
+    @author_links = Link.where(author_ip: request.remote_ip)
   end
 
   # Helpers mostly for debugging in the view to check if shortening/unshortening is correct.

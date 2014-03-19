@@ -16,9 +16,15 @@
 </head>
 <body>
 
-<%= render "navbar" %>
+<%= render "header" %>
 
-<%= yield %>
+<div id="MainDiv">
+  <div id="BodyDiv">
+    <%= yield %>
+  </div>
+</div>
+
+<%= render "footer" %>
 
 </body>
 </html>
