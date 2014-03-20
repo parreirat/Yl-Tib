@@ -1,28 +1,41 @@
-<div class="BoxedDiv">
+<% if @links.count == 0 %>
+    <div class="BoxedDiv">
+      <h1>No links available for display!</h1>
+    </div>
+<% else %>
 
-  <table>
+    <div class="BoxedDiv">
+      <table id="Table">
 
-    <thead>
-    <tr>
-      <th style="width:140px">Original Link</th>
-      <th style="width:240px">Shortened Link</th>
-      <th style="width:140px">Click Count</th>
-      <th></th>
-    </tr>
-    </thead>
-
-    <tbody>
-    <% @author_links.order(:click_count).reverse.each do |link| %>
+        <thead>
         <tr>
-          <td><%= link.original_link %></td>
-          <td><%= root_url + link.shortened_link %></td>
-          <td><%= link.click_count %></td>
-          <td><%= link_to 'Apagar Link', '/links/'+link.id.to_s, method: :delete %></td>
+          <th id="OriginalLinkHeader">Original Link</th>
+          <th id="ShortenedLinkHeader">Shortened Link</th>
+          <th id="ClickCountHeader">Click Count</th>
+          <th id="DeleteHeader"></th>
         </tr>
+        </thead>
 
-    <% end %>
-    </tbody>
+        <tbody>
+        <% @links.order(:click_count).reverse.each do |link| %>
+            <tr>
+              <td class="TableContent">
+                <a class="LinkText" href="<%= link.original_link %>">
+                  <%= link.original_link %>
+                </a></td>
+              <td class="TableContent">
+                <a class="LinkText" href="<%= root_url + link.shortened_link %>">
+                  <%= root_url + link.shortened_link %>
+                </a></td>
+              <td class="TableContent"><%= link.click_count %></td>
+              <td><%= link_to 'Apagar Link', '/links/'+link.id.to_s, method: :delete, class: "SubmitButton" %></td>
+            </tr>
 
-  </table>
+        <% end %>
+        </tbody>
 
-</div>
+      </table>
+
+    </div>
+
+<% end %>

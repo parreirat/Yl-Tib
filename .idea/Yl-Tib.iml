@@ -48,7 +48,6 @@
     <orderEntry type="library" scope="PROVIDED" name="turbolinks (v2.2.1, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.39, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.5.0, ruby-1.9.3-p392) [gem]" level="application" />
-    <orderEntry type="module" module-name="-DAWeb TP2-" />
   </component>
 </module>
 

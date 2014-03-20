@@ -1,0 +1,80 @@
+
+#HeaderDiv {
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.HeaderMenuItem {
+    width: 26.666667%;
+    height: 60px;
+    float: left;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-top: 4px;
+    border-bottom: 4px;
+}
+
+.HeaderMenuItem:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-bottom: solid 4px #b8860b;
+}
+
+.HeaderMenuItem:active {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.HeaderItemDecoration {
+    text-decoration: none;
+    font-family: 'Rammetto One', cursive;
+    font-size: 12px;
+    color: #d4dace;
+    /*color: #cbd2bb;*/
+}
+
+.HeaderItemDecoration:hover {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#MenuLogo {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: 35%;
+    width: 20%;
+    background-image: url(<%= asset_path 'bannerImages/Logo.png' %>);
+    border-bottom: solid 4px #b8860b;
+}
+
+#MenuLogo:active {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*Todos os filhos de HeaderDiv que não o Logo. Um shortcut.*/
+#HeaderDiv * :not(#MenuLogo):hover {
+    background-size: 65px;
+}
+
+#MenuLogo:hover {
+    background-size: 40%;
+}
+
+#MenuShorten {
+    background-image: url(<%= asset_path 'bannerImages/Shorten.png' %>);
+    background-size: 50px;
+}
+
+#MenuStatistics {
+    background-image: url(<%= asset_path 'bannerImages/Statistics.png' %>);
+    background-size: 50px;
+}
+
+#MenuSelf {
+    background-image: url(<%= asset_path 'bannerImages/Self.png' %>);
+    background-size: 50px;
+}

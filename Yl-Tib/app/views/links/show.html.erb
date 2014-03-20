@@ -6,7 +6,7 @@
 
   <p>
     <strong>Original link:</strong>
-    <a href=" <%= @link.original_link %> ">
+    <a  class="LinkText" href=" <%= @link.original_link %> ">
       <%= @link.original_link %>
     </a>
   </p>
@@ -15,10 +15,12 @@
 
   <p>
     <strong>Shortened link:</strong>
-    <a href=" <%= root_url + @link.shortened_link %> ">
+    <a  class="LinkText" href=" <%= root_url + @link.shortened_link %> ">
       <%= root_url + @link.shortened_link %>
     </a>
   </p>
+
+  <br/>
 
   <% if @link.click_count > 0 %>
       <strong>Click count:</strong>

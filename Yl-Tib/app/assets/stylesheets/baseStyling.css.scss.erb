@@ -3,8 +3,6 @@
     padding: 0px;
 }
 
-/* BODY CSS */
-
 body {
     background-image: -ms-linear-gradient(top left, #96A8A0 0%, #BFBB5A 100%);
     background-image: -moz-linear-gradient(top left, #96A8A0 0%, #BFBB5A 100%);
@@ -33,90 +31,6 @@ body {
     /*border: solid 2px #b8860b;*/
 }
 
-/* HEADER CSS */
-
-#HeaderDiv {
-    background-color: rgba(0, 0, 0, 0.5);
-    float: left;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    width: 95%;
-    height: 60px;
-    margin-bottom: 15px;
-}
-
-.HeaderMenuItem {
-    width: 26.666667%;
-    height: 60px;
-    float: left;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    border-top: 4px;
-    border-bottom: 4px;
-}
-
-.HeaderMenuItem:hover {
-    background-color: rgba(0, 0, 0, 0.35);
-    border-bottom: solid 4px #b8860b;
-}
-
-.HeaderMenuItem:active {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.HeaderItemDecoration {
-    text-decoration: none;
-    font-family: 'Rammetto One', cursive;
-    font-size: 12px;
-    color: #d4dace;
-    /*color: #cbd2bb;*/
-}
-
-.HeaderItemDecoration:hover {
-    font-size: 14px;
-    text-decoration: none;
-}
-
-#MenuLogo {
-    background-color: rgba(0, 0, 0, 0.4);
-    background-size: 35%;
-    width: 20%;
-    background-image: url(<%= asset_path 'bannerImages/Logo.png' %>);
-    border-bottom: solid 4px #b8860b;
-}
-
-#MenuLogo:active {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-/*Todos os filhos de HeaderDiv que não o Logo. Um shortcut.*/
-#HeaderDiv * :not(#MenuLogo):hover {
-    background-size: 65px;
-}
-
-#MenuLogo:hover {
-    background-size: 40%;
-}
-
-#MenuShorten {
-    background-image: url(<%= asset_path 'bannerImages/Shorten.png' %>);
-    background-size: 50px;
-}
-
-#MenuStatistics {
-    background-image: url(<%= asset_path 'bannerImages/Statistics.png' %>);
-    background-size: 50px;
-}
-
-#MenuSelf {
-    background-image: url(<%= asset_path 'bannerImages/Self.png' %>);
-    background-size: 50px;
-}
-
-/* Main Content Div CSS*/
-
 #MainDiv {
     position: relative;
     margin-left: 3%;
@@ -139,72 +53,6 @@ body {
     padding-top: 5px;
 }
 
-/* Footer CSS */
-
-#FooterDiv {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-top: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 96%;
-    float: left;
-    /*clear: both;*/
-    background-color: rgba(0, 0, 0, 0.5);
-    border: solid 2px #b8860b;
-}
-
-#FooterText {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-top: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 8px;
-    font-size: 90%;
-    font-family: sans-serif;
-    color: #d4dace;
-    float: left;
-}
-
-/* New Link CSS */
-
-.SubmitButton {
-    font-family: 'Rammetto One', cursive;
-    color: #d4dace;
-    font-size: 10px;
-    border-radius: 5px;
-    border: 2px solid #888888;
-    padding: 0px 4px 0px 4px;
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-.FormInput {
-    font-family: 'Rammetto One', cursive;
-    color: #d4dace;
-    font-size: 10px;
-    border-radius: 5px;
-    border: 2px solid #888888;
-    padding: 0px 4px 0px 4px;
-    background-color: rgba(255, 255, 255, 0.15);
-    width: 50%;
-    margin-bottom: 10px;
-    margin-top: 6px;
-}
-
-.LabelText {
-    font-family: 'Rammetto One', cursive;
-    font-size: 10px;
-    color: #d4dace;
-}
-
 .BoxedDiv {
     color: #d4dace;
     text-align: center;
@@ -220,10 +68,3 @@ body {
     height: inherit;
     border: solid 2px #adb3a8;
 }
-
-.LinkText {
-    text-decoration: none;
-}
-
-/* TODO: RESPONSIVENESS!! */
-

@@ -3,6 +3,7 @@ YlTib::Application.routes.draw do
   root "links#new"
 
   get '/links' => 'links#index'
+  get '/ownLinks' => 'links#own'
   post '/links' => 'links#create'
   get '/links/new' => 'links#new'
   get '/links/:id' => 'links#show'

@@ -7,6 +7,10 @@
 <!--Incase current user has Links up, display the Link listing. -->
 <% if @author_links.count > 0 %>
 
+    <div class="DivTitle">
+      <h1>Links you previously shortened:</h1>
+    </div>
+
     <%= render 'partials/authorLinksListing' %>
 
 <% end %>

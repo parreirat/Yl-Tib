@@ -10,6 +10,7 @@ class LinksController < ApplicationController
     #TODO - To be added.
   end
 
+  # Redirects the user to the intended page and increases hit counter by 1
   def redirect
 
     #TODO - Redirecction waiting page plus a sleep on it.
@@ -22,10 +23,13 @@ class LinksController < ApplicationController
 
   end
 
+  # Supplies author's links to /ownLinks
+  def own
+    @author_links = author_links
+  end
+
   def show
-
     @link = Link.find(params[:id])
-
   end
 
   def new
