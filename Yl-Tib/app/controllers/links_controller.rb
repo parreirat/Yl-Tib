@@ -6,8 +6,17 @@ class LinksController < ApplicationController
 
   end
 
-  def waiting
-    #TODO - To be added.
+  # Supplies author's links to /ownLinks
+  def own
+
+    @links = author_links
+
+  end
+
+  def show
+
+    @link = Link.find(params[:id])
+
   end
 
   # Redirects the user to the intended page and increases hit counter by 1
@@ -23,27 +32,22 @@ class LinksController < ApplicationController
 
   end
 
-  # Supplies author's links to /ownLinks
-  def own
-    @author_links = author_links
+  def waiting
+    #TODO - To be added.
   end
 
-  def show
-    @link = Link.find(params[:id])
-  end
 
   def new
 
     # Prepare for form in view.
     @link = Link.new
-    @author_links = author_links
+    @links = author_links
 
   end
 
   def create
 
     # Creates new link with parameters passed through.
-    #TODO - Parsing to check if link is valid?
     @link = Link.new(link_params)
 
     stored_link = Link.where(original_link: @link.original_link)
