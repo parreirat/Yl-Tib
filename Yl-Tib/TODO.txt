@@ -7,7 +7,6 @@ conteúdo (aqui não estou certo como o faria) e cancelar o redireccionamento.
 - Um modelo de users, onde cada IP seria considerado um user. (e futuramente ser utilizado o devise)
 - Tomar atenção à documentação (penso que seja tudo bastante simples de perceber e tentei comentar
 à medida que fui fazendo, mas não houve uma revisão do mesmo.
-- MODELOS VAZIOS????
 - Mudar tipo de registo - PW aleatória gerada que fica aglomerada junto a cada link on-show?
 
 ---------- DONE ----------
@@ -15,3 +14,4 @@ conteúdo (aqui não estou certo como o faria) e cancelar o redireccionamento.
 - Uma maior organização dos ficheiros (separação do css por ficheiro e não comentários).
 - Vários detalhes de design (formatar links, formatar display de links numa tabela bem organizada,
 pois está tudo ao monte).
+- MODELOS VAZIOS????
