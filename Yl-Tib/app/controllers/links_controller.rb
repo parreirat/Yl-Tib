@@ -24,7 +24,7 @@ class LinksController < ApplicationController
 
     #TODO - Redirecction waiting page plus a sleep on it.
     #TODO - Check if link exists.
-    id = unshorten_link(params[:shortened_link])
+    id = Link.unshorten_link(params[:shortened_link])
     @link = Link.find(id)
     @link.click_count += 1
     @link.save
@@ -32,8 +32,8 @@ class LinksController < ApplicationController
 
   end
 
-  def waiting
-    #TODO - To be added.
+  def waiting(link)
+
   end
 
 

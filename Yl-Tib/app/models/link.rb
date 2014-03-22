@@ -2,7 +2,6 @@ class Link < ActiveRecord::Base
 
   validates :original_link, length: { minimum: 5 }
 
-
   # The symbols used to encode the URLs.
   SYMBOLS =
       (('a'..'z').to_a + ('A'..'Z').to_a + (0..9).to_a).join

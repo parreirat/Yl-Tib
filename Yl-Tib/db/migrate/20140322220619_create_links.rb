@@ -1,11 +1,12 @@
 class CreateLinks < ActiveRecord::Migration
   def change
-    # rake db:migrate
-    # drop_table :links
+
+    drop_table :links
     create_table :links do |t|
       t.string :original_link
       t.string :shortened_link
-      t.string :author_ip
+      t.string :author_id
+      t.string :link_name
       t.integer :click_count
 
       t.timestamps
